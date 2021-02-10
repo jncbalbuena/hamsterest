@@ -34,9 +34,9 @@ header{
 	transition:1s;
 }
 nav{
-	
 	margin-top: auto;
-	min-width:1920px;
+	min-width:100%;
+	height: auto;
 	background-color: #5CDB95;
 	padding-bottom: 50px;
 	padding-top: 10px;
@@ -47,6 +47,7 @@ nav.sticky{
 	padding-bottom: 0px;
 	background-color: #8EE4AF;
 	height: 90px;
+	transition: 1s;
 }
 nav.sticky .flexed2{
 	display: flex;
@@ -93,7 +94,8 @@ a{ /* anchored texts at the nav bar */
 	flex-flow: row wrap;
 	margin-top: 50px;
 	margin-left: 51px;
-	width:38%;
+	max-width:38%;
+	height: auto;
 	z-index: 2;
 	transition: 1s;
 }
@@ -107,7 +109,7 @@ nav.sticky .logo{
 	align-items: center;	
 	padding: 0px 10%;
 	position: absolute;
-	z-index: 5;
+	z-index: 1;
 }
 nav.sticky .menu{
 	position: absolute;
@@ -121,23 +123,21 @@ nav.sticky .menu{
 	transition: 1s;
 }
 /* this is the line above the cover photo */
-.line-container{
-	padding-left: 100px;
-	padding-right: 100px;
+.line-container{padding-top: 90px;
+	padding-left: 90px;
+	padding-right: 90px;
 }
 .line{
-	width: 1700px;
+	min-width: 100%;
 	height: 0px;
 	position: relative;
 	content = "";
-	position: absolute;
 	margin: auto;
 	height: 2px;
 	background: #EDF5E1;
 	width 70%;
 	top: 30%%;
 	bottom: 0%;
-	transition: 1s
 	
 }
 
@@ -148,7 +148,8 @@ nav.sticky .menu{
 	right: 130px;
 	transform: translate(-0%,-100%);
 	background: #EDF5E1;
-	height: 50px;
+	max-width: 100%;
+	height: auto;
 	border-radius: 40px;
 	padding: 10px;
 	transition: 1s;
@@ -159,8 +160,10 @@ header.sticky nav{
 	
 }
 header.sticky .line{
+	width: 0;
+	height: 0;
 	background: #8EE4AF;
-	
+	position: absolute;
 }
 
 .search-box:hover > .search-txt{
@@ -204,8 +207,8 @@ nav.sticky .search-box{
 
 /* this is the slider */
 .slider{
-	width: 1920px;
-	height: 900px;
+	max-width: 100%;
+	height: auto;
 	overflow: hidden;
 }
 .slides{
@@ -217,13 +220,13 @@ nav.sticky .search-box{
 	display: none;
 }
 .slide{
-	margin-top: -80px;
+	margin-top: -30px;
 	width: 20%;
 	transition: 3s;
 }
 .slide img{
-	width: 1920px;
-	height: 700px;
+	max-width: 100%;
+	height: auto;
 }
 
 /* for manual sliding */
