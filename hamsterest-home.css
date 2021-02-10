@@ -213,7 +213,7 @@ nav.sticky .search-box{
 }
 .slides{
 	width: 500%;
-	height: 500px;
+	height: auto;
 	display: flex;
 }
 .slides input{

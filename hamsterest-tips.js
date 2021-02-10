@@ -16,3 +16,9 @@ window.addEventListener("scroll", function(){
 	var header = document.querySelector("nav");
 	header.classList.toggle("sticky", window.scrollY > 0);
 })
+var iframe = document.getElementByClass("iframedes");
+    
+    // Adjusting the iframe height onload event
+    iframe.onload = function(){
+        iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+	}
