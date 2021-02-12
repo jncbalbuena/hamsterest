@@ -116,10 +116,7 @@ nav.sticky .menu{
 	padding: 30px 38%
 }
 
-
-
 .flexed{
-	
 	transition: 1s;
 }
 /* this is the line above the cover photo */
@@ -395,14 +392,10 @@ h2{
 	main{
 		font-size: 20px;
 	}
-	.container{
-		opacity: 0;
-	}
+	
 }
 @media (min-width: 1295px){
-	.container{
-		margin-left: 20vw;
-	}
+
 
 }
 @media (max-width: 900px){
@@ -412,6 +405,11 @@ h2{
 
 }
 
+.cover{
+	width: 1920px;
+	height: auto;
+	margin-top: 25px;
+}
 .iframedes
 {	margin-bottom: 80px;
 	width: 100%;
@@ -420,37 +418,90 @@ h2{
 	display: block;
 	border: 0;
 }
-
-.navbar li{
-	padding-top: 20px;
-	padding-bottom: 20px;
-	margin-left: 100px;
-	margin-right: 100px;
-	transform: scale(0%,50%);
-	font-size: 24px;
-	align-items:center;	
-}
-.navbar a:hover{ /* to change color when cursor is hovering the anchored texts */   
-	color: #EDF5E1;
-}
-.navbar li a{
-	display:block;
-	align-items:center;
-	color: #05386B;
-	transition: 1s;
+.dropdown{
+	margin: 0;
 }
 .navbar{
-	border-radius: 30px;
-	margin-top: 80px;
+	border-radius: 40px;
+	margin-top: -160px;
 	margin-bottom: 30px;
+	min-width: 90%;
 	margin-left: 5%;
 	margin-right: 5%;
-	max-width: 90%;
-	display:flex;
-	align-items:center;
-	background-color: #8EE4AF;
+	height: 80px;
+	background: #EDF5E1;
 }
 .container{
 	margin-left: 20px;
-	display: flex;
 }
+.navbar ul li{
+	float: center;
+	background: #EDF5E1;
+	position: relative;
+	list-style: none;
+	display: inline-block;
+	border-radius: 35px;
+}
+.navbar ul li a{
+	display:block;
+	padding: 0 25px;
+	color: #05386B;
+	text-decoration: none;
+	line-height: 60px;
+	transition: 0.6s;
+
+}
+.navbar ul ul{
+	position: absolute;
+	top: 60px;
+	display: none;
+}
+.navbar li{
+	width: 330px;
+	font-size: 24px;
+}
+.navbar li:hover{
+	
+}
+.navbar ul li a:hover{
+	color: #EDF5E1;
+	background: #05386B;
+	border-radius: 40px;
+	
+}
+.navbar li ul:hover{
+	color: #EDF5E1;
+	
+}
+.navbar li:hover > ul{
+	display: block;	
+	color: #EDF5E1;
+}
+.navbar li:hover > ul{
+	transform-origin: top center;
+	opacity: 0;
+}
+.navbar li:hover > ul:nth-child(1){
+	animation: animate 300ms ease-in-out forwards;
+	animation-delay: -450ms;
+}
+.navbar li:hover > ul:nth-child(2){
+	animation: animate 600ms ease-in-out forwards;
+	animation-delay: 0ms;
+}
+
+@keyframes animate{
+	0%{
+		opacity: 0;
+		transform: rotateX(-90deg);
+	}
+	50%{
+		transform: rotateX(20deg);
+	}
+	100%{
+		opacity: 1;
+		transform: rotateX(0deg);
+	}
+}
+
+
