@@ -13,8 +13,16 @@ font-family: GothamHTF-Light;
 src: url(fonts/GothamHTF-Light.otf);
 }
 @font-face { 
-font-family: GothamHTF-Light;
-src: url(fonts/GothamHTF-Light.otf);
+font-family: EncodeSans-Bold;
+src: url(fonts/EncodeSans-Bold.ttf);
+}
+@font-face { 
+font-family: EncodeSans-Regular;
+src: url(fonts/EncodeSans-Regular.ttf);
+}
+@font-face { 
+font-family: DroidSerif-Regular;
+src: url(fonts/DroidSerif-Regular.ttf);
 }
 body{
 	font-family: GothamHTF-Bold;
@@ -398,10 +406,6 @@ h2{
 	}
 	
 }
-@media (min-width: 1295px){
-
-
-}
 @media (max-width: 900px){
 	.search-box{
 		display: none;
@@ -420,26 +424,24 @@ h2{
 	margin: 0;
 }
 .navbar{
-	border-radius: 40px;
+	border-radius: 50px;
 	margin-top: 100px;
 	margin-bottom: 30px;
 	min-width: 90%;
 	margin-left: 5%;
 	margin-right: 5%;
-	height: 80px;
+	height: 100px;
 	background: #8EE4AF;
 	z-index: 10;
 }
-.container{
-	margin-left: 20px;
-}
 .navbar ul li{
 	float: center;
-	background: #8EE4AF;
+	background: #EDF5E1;
 	position: relative;
 	list-style: none;
 	display: inline-block;
 	border-radius: 35px;
+	margin-left: 25px;
 }
 .navbar ul li a{
 	display:block;
@@ -448,7 +450,16 @@ h2{
 	text-decoration: none;
 	line-height: 60px;
 	transition: 0.6s;
-
+}
+.navbar ul ul li{
+	float: center;
+	background: #EDF5E1;
+	position: relative;
+	list-style: none;
+	display: inline-block;
+	border-radius: 35px;
+	margin-left: 0px;
+	margin-top: 0px;
 }
 .navbar ul ul{
 	position: absolute;
@@ -456,7 +467,8 @@ h2{
 	display: none;
 }
 .navbar li{
-	width: 330px;
+	margin-top: 10px;
+	width: 308px;
 	font-size: 24px;
 }
 .navbar li:hover{
@@ -503,21 +515,33 @@ h2{
 	}
 }
 
+.content .texts{
+	margin-left: 21vw;
+	color: #05386B;
+	position: static;
+}	
+.title {
+	margin-top: -27vw;
+	font-size: 70px;
+}
 .robo-tips {
-	margin-top:20px;
+	margin-top:30px;
 	max-width: 100%;
 	height: auto;
 }
 .tips-title {
-	margin-top: -25vw;
-	margin-left: 20vw;
+	font-size: 70px;
+	font-family: EncodeSans-Bold;
 }
 .tips-sub {
-	margin-top:20px;
+	font-family: EncodeSans-Regular;
+	margin-top: -1vw;
 }
 .tips-content {
+	font-family: DroidSerif-Regular;
 	margin-top:20px;
-	max-width: 500px;
-	height: auto;
+	font-size: 20px;
+	max-width: 650px;
+	height: auto;	
 }
 

@@ -416,26 +416,24 @@ h2{
 	margin: 0;
 }
 .navbar{
-	border-radius: 40px;
-	margin-top: 40px;
+	border-radius: 50px;
+	margin-top: 100px;
 	margin-bottom: 30px;
 	min-width: 90%;
 	margin-left: 5%;
 	margin-right: 5%;
-	height: 80px;
+	height: 100px;
 	background: #8EE4AF;
 	z-index: 10;
 }
-.container{
-	margin-left: 20px;
-}
 .navbar ul li{
 	float: center;
-	background: #8EE4AF;
+	background: #EDF5E1;
 	position: relative;
 	list-style: none;
 	display: inline-block;
 	border-radius: 35px;
+	margin-left: 25px;
 }
 .navbar ul li a{
 	display:block;
@@ -446,13 +444,24 @@ h2{
 	transition: 0.6s;
 
 }
+.navbar ul ul li{
+	float: center;
+	background: #EDF5E1;
+	position: relative;
+	list-style: none;
+	display: inline-block;
+	border-radius: 35px;
+	margin-left: 0px;
+	margin-top: 0px;
+}
 .navbar ul ul{
 	position: absolute;
 	top: 60px;
 	display: none;
 }
 .navbar li{
-	width: 330px;
+	margin-top: 10px;
+	width: 308px;
 	font-size: 24px;
 }
 .navbar li:hover{
