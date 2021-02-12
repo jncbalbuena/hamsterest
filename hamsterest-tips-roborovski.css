@@ -12,6 +12,10 @@ src: url(fonts/GothamHTF-Bold.otf);
 font-family: GothamHTF-Light;
 src: url(fonts/GothamHTF-Light.otf);
 }
+@font-face { 
+font-family: GothamHTF-Light;
+src: url(fonts/GothamHTF-Light.otf);
+}
 body{
 	font-family: GothamHTF-Bold;
 	max-width:1920px;
@@ -417,7 +421,7 @@ h2{
 }
 .navbar{
 	border-radius: 40px;
-	margin-top: 40px;
+	margin-top: 100px;
 	margin-bottom: 30px;
 	min-width: 90%;
 	margin-left: 5%;
@@ -499,4 +503,21 @@ h2{
 	}
 }
 
+.robo-tips {
+	margin-top:20px;
+	max-width: 100%;
+	height: auto;
+}
+.tips-title {
+	margin-top: -25vw;
+	margin-left: 20vw;
+}
+.tips-sub {
+	margin-top:20px;
+}
+.tips-content {
+	margin-top:20px;
+	max-width: 500px;
+	height: auto;
+}
 
