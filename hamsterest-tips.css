@@ -12,6 +12,14 @@ src: url(fonts/GothamHTF-Bold.otf);
 font-family: GothamHTF-Light;
 src: url(fonts/GothamHTF-Light.otf);
 }
+@font-face { 
+font-family: DroidSerif-Regular;
+src: url(fonts/DroidSerif-Regular.ttf);
+}
+@font-face {
+font-family: This is Signature;
+src: url(fonts/This is Signature FREE personal use.ttf);
+}
 body{
 	font-family: GothamHTF-Bold;
 	max-width:1920px;
@@ -136,6 +144,7 @@ nav.sticky .menu{
 	width 70%;
 	top: 30%%;
 	bottom: 0%;
+	opacity: 50%;
 	
 }
 
@@ -435,6 +444,7 @@ h2{
 	border-radius: 35px;
 	margin-left: 25px;
 }
+
 .navbar ul li a{
 	display:block;
 	padding: 0 25px;
@@ -506,6 +516,48 @@ h2{
 		opacity: 1;
 		transform: rotateX(0deg);
 	}
+}
+.intro-line {
+	padding-left: 400px;
+	padding-top: 140px;
+	padding-bottom: 100px;
+	display: flex;
+}
+.texts {
+	padding-left: 600px;
+	padding-bottom: 350px;
+	margin-top: -1185px;
+	max-width: 1300px;
+	color: #EDF5E1;
+}
+.intro-title {
+	font-family: "Raleway";
+	font-size: 70px;
+}
+.intro-content1 {
+	padding-top: 40px;
+	font-size: 20px;
+	font-family: "DroidSerif-Regular";
+}
+.intro-ending {
+	padding-top: 90px;
+	font-family: "This is Signature";
+	font-size: 80px;
+}
+.bottom-image {
+	margin-top: -500px;
+	margin-left: 980px;
+	margin-bottom: -4px;
+	width: 47%;
+	height: auto;
+}
+
+.line1{
+	max-width: 100%;
+	height: 20px;
+	position: relative;
+	content = "";
+	background: #EDF5E1;
 }
 
 
