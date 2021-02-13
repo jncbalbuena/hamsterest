@@ -13,16 +13,28 @@ font-family: GothamHTF-Light;
 src: url(fonts/GothamHTF-Light.otf);
 }
 @font-face { 
-font-family: EncodeSans-Bold;
-src: url(fonts/EncodeSans-Bold.ttf);
-}
-@font-face { 
-font-family: EncodeSans-Regular;
-src: url(fonts/EncodeSans-Regular.ttf);
-}
-@font-face { 
 font-family: DroidSerif-Regular;
 src: url(fonts/DroidSerif-Regular.ttf);
+}
+@font-face { 
+font-family: DroidSerif-Bold;
+src: url(fonts/DroidSerif-Bold.ttf);
+}
+@font-face { 
+font-family: Moonllime;
+src: url(fonts/Moonllime.ttf);
+}
+@font-face {
+font-family: This is Signature;
+src: url(fonts/This is Signature FREE personal use.ttf);
+}
+@font-face {
+font-family: EncodeSansNarrow-Light;
+src: url(fonts/EncodeSansNarrow-300-Light.ttf);
+}
+@font-face {
+font-family: EncodeSans-Bold;
+src: url(fonts/EncodeSans-Bold.ttf);
 }
 body{
 	font-family: GothamHTF-Bold;
@@ -148,6 +160,7 @@ nav.sticky .menu{
 	width 70%;
 	top: 30%%;
 	bottom: 0%;
+	opacity: 50%;
 	
 }
 
@@ -305,13 +318,6 @@ nav.sticky .search-box{
 	background: #EDF5E1;
 }
 
-.line1{
-	max-width: 100%;
-	height: 20px;
-	position: relative;
-	content = "";
-	background: #EDF5E1;
-}
 footer{
 	padding: 50px;
 	color: #05386B;
@@ -363,21 +369,6 @@ footer{
 	font-size: 40px;
 	align-content: center;
 }
-@media screen and (min-width: 600px){
-	
-	.footer-right > *{
-		flex: 1;
-	}
-	.footer-left{
-		flex: 1 0px;
-	}
-	.footer-right{
-		flex: 1 2px;
-	}
-}
-.logo-footer{
-	
-}	
 @media (max-width: 1250px){
 	.menu{
 		display: none;
@@ -388,7 +379,6 @@ footer{
 	main{
 		font-size: 20px;
 	}
-	
 }
 @media (max-width: 900px){
 	.search-box{
@@ -410,7 +400,7 @@ footer{
 .navbar{
 	border-radius: 50px;
 	margin-top: 70px;
-	margin-bottom: 30px;
+	margin-bottom: -30px;
 	min-width: 90%;
 	margin-left: 5%;
 	margin-right: 5%;
@@ -427,6 +417,7 @@ footer{
 	border-radius: 35px;
 	margin-left: 25px;
 }
+
 .navbar ul li a{
 	display:block;
 	padding: 0 25px;
@@ -434,6 +425,7 @@ footer{
 	text-decoration: none;
 	line-height: 60px;
 	transition: 0.6s;
+
 }
 .navbar ul ul li{
 	float: center;
@@ -498,34 +490,114 @@ footer{
 		transform: rotateX(0deg);
 	}
 }
-
-.content .texts{
-	margin-left: 400px;
-	color: #05386B;
-	position: static;
-}	
-.title {
-	margin-top: -530px;
+.cage-line {
+	padding-left: 250px;
+	padding-top: 140px;
+	padding-bottom: 100px;
+	display: flex;
+}
+.texts {
+	padding-left: 450px;
+	padding-bottom: 2050px;
+	margin-top: -2050px;
+	max-width: 1000px;
+	color: #EDF5E1;
+}
+.cage-title {
+	font-family: "EncodeSans-Bold";
 	font-size: 70px;
+	max-width: 1600px;
+	padding-left: 450px;
+	padding-bottom: 2050px;
+	margin-top: -3500px;
+	color: #EDF5E1;
 }
-.tbh-tips {
-	margin-top:30px;
-	max-width: 100%;
-	height: auto;
-}
-.tips-title {
+.cage-subtitle {
+	font-family: "EncodeSansNarrow-Light";
 	font-size: 70px;
-	font-family: EncodeSans-Bold;
+	max-width: 1600px;
+	padding-left: 450px;
+	padding-bottom: 2050px;
+	margin-top: -2070px;
+	color: #EDF5E1;
 }
-.tips-sub {
-	font-family: EncodeSans-Regular;
-	margin-top: -1vw;
-}
-.tips-content {
-	font-family: DroidSerif-Regular;
-	margin-top:20px;
+.cage-content1 {
+	padding-top: 40px;
 	font-size: 20px;
-	max-width: 650px;
-	height: auto;	
+	font-family: "DroidSerif-Regular";
+}
+.cage-content2 {
+	padding-left: 1050px;
+	padding-bottom: 2050px;
+	margin-top: -2349px;
+	max-width: 1600px;
+	color: #EDF5E1;
+	padding-top: 40px;
+	font-size: 20px;
+	font-family: "DroidSerif-Regular";
+}
+
+.background-image {
+	margin-top: -1950px;
+	margin-left: 382px;
+	margin-bottom: 1000px;
+	width: 80%;
+	height: 80%;
+}
+
+.line1{
+	max-width: 100%;
+	height: 20px;
+	position: relative;
+	content = "";
+	background: #EDF5E1;
+}
+.cage2-title {
+	font-size: 150px;
+	font-family: Moonllime;
+	color: #EDF5E1;
+	padding-left: 635px;
+	padding-bottom: 2050px;
+	margin-top: -2320px;
+}
+.cage2-title2 {
+	font-size: 150px;
+	font-family: Moonllime;
+	color: #EDF5E1;
+	padding-left: 635px;
+	padding-bottom: 2050px;
+	margin-top: -2120px;
+}
+.cage2-subtitle {
+	font-size: 32px;
+	font-family: DroidSerif-Bold;
+	color: #EDF5E1;
+	padding-left: 650px;
+	padding-bottom: 2050px;
+	margin-top: -2020px;
+	max-width: 1700px;
+}
+.cage2-content {
+	font-size: 20px;
+	font-family: DroidSerif-Regular;
+	color: #EDF5E1;
+	padding-left: 720px;
+	padding-bottom: 2050px;
+	margin-top: -2020px;
+	max-width: 1700px;
+}
+.cage2-numbers{
+	font-size: 100px;
+	font-family: Moonllime;
+	color: #EDF5E1;
+	padding-left: 650px;
+	padding-bottom: 2050px;
+	margin-top: -2700px;
+	max-width: 1700px;
+}
+.cage2-number{
+	font-size: 100px;
+	font-family: Moonllime;
+	color: #EDF5E1;
 }
 

@@ -4,6 +4,7 @@
 <meta charset = "utf-8">
 <title>Hamsterest</title>
 <script src = "hamsterest-facts.js"></script>
+<link rel = "stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 <link rel = "stylesheet" href = "hamsterest-facts.css">
 <script defer src="https://kit.fontawesome.com/fd13cf3581.js"></script>
 </head>
@@ -41,48 +42,70 @@
 				</div>				
 			</nav>
 		</header>
-
 		
-		<div class = "slider">
-				<div class ="slides">
-					<input type = "radio" name = "radio-btn" id = "radio1">
-					<input type = "radio" name = "radio-btn" id = "radio2">
-					<input type = "radio" name = "radio-btn" id = "radio3">
-					<input type = "radio" name = "radio-btn" id = "radio4">
-					
-					<div class = "slide first">
-						<img src="img/hamsterest_cover.png">
-					</div>
-					
-					<div class = "slide">
-						<img src="img/hamsterest_cover.png">
-					</div>
-					
-					<div class = "slide">
-						<img src="img/hamsterest_cover.png">
-					</div>
-					
-					<div class = "slide">
-						<img src="img/hamsterest_cover.png">
-					</div>
-					
-					<div class = "navigation-auto">
-						<div class = "auto-btn1"></div>
-						<div class = "auto-btn2"></div>
-						<div class = "auto-btn3"></div>
-						<div class = "auto-btn4"></div>
-					</div>
-					
-					<div class = "navigation-manual">
-						<label for = "radio1" class ="manual-btn"></label>
-						<label for = "radio2" class ="manual-btn"></label>
-						<label for = "radio3" class ="manual-btn"></label>		
-						<label for = "radio4" class ="manual-btn"></label>
-					</div>
-					
-				</div>
-				
+		<div class = "breed">
+		
 		</div>
+		<div class = "swiper">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<a href = "hamsterest-home.html" class="swiper-slide">
+						<img src = "img/roborovski_facts.png"></img>
+						<div class = "details">
+							Roborovski
+						</div>
+					</a>
+					<a href = "hamsterest-home.html" class="swiper-slide">
+						<img src = "img/winter_facts.png"></img>
+						<div class = "details">
+							Winter White
+						</div>
+					</a>
+					<a href = "hamsterest-home.html" class="swiper-slide">
+						<img src = "img/golden_facts.png"></img>
+						<div class = "details">
+							Golden
+						</div>
+					</a>
+					<a href = "hamsterest-home.html" class="swiper-slide">
+						<img src = "img/tbh_facts.png"></img>
+						<div class = "details">
+							Teddy Bear
+						</div>
+					</a>
+					<a href = "hamsterest-home.html" class="swiper-slide">
+						<img src = "img/cdh_facts.png"></img>
+						<div class = "details">
+							Campbell's
+						</div>
+					</a>
+				</div>
+			</div>
+			
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+			  effect: 'coverflow',
+			  grabCursor: true,
+			  centeredSlides: true,
+			  slidesPerView: 'auto',
+			  coverflowEffect: {
+				rotate: 20,
+				stretch: 0,
+				depth: 250,
+				modifier: 1,
+				slideShadows: false,
+			  },
+			  
+			  pagination: {
+				el: '.swiper-pagination',
+			  },
+			  loop: true,
+			  spaceBetween: 100,
+			});
+		</script>
+		</div>
+		
 		<pre>
 		
 		
