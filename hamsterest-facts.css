@@ -16,6 +16,10 @@ src: url(fonts/GothamHTF-Light.otf);
 font-family: Moonllime;
 src: url(fonts/Moonllime.ttf);
 }
+@font-face { 
+font-family: EncodeSans-Bold;
+src: url(fonts/EncodeSans-Bold.ttf);
+}
 body{
 	font-family: GothamHTF-Bold;
 	max-width:1920px;
@@ -392,7 +396,6 @@ footer{
 .swiper {
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
-    color: #000;
     margin-top: 50px;
     padding: 0;
 	justify-content: center;
@@ -410,8 +413,17 @@ footer{
     max-height: 470px;
 }
 .details {
-	font-family: "Moonllime";
+	font-family: Moonllime;
 	font-size: 100px;
 	text-align: center;
 	margin-top: -50px;
+	color: #EDF5E1;
+}
+
+.breeds {
+	font-family: EncodeSans-Bold;
+	font-size: 100px;
+	color: #EDF5E1;
+	text-align: center;
+	margin-top: 75px;
 }
