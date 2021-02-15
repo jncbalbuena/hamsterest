@@ -417,6 +417,29 @@ footer{
 	background: #8EE4AF;
 	z-index: 10;
 }
+.mains a{
+	color: #EDF5E1;
+	background: #05386B;
+	border-radius: 40px;
+}
+.navbar ul .mains a {
+	color: #EDF5E1;
+}
+
+.navbar ul .mains ul .not a{
+	float: center;
+	background: #EDF5E1;
+	position: relative;
+	list-style: none;
+	display: inline-block;
+	border-radius: 35px;
+	margin-left: 0px;
+	margin-top: 0px;
+	width: 308px;
+}
+.navbar ul .mains ul .not a{
+	color: #05386B;
+}
 .navbar ul li{
 	float: center;
 	background: #EDF5E1;
@@ -432,7 +455,6 @@ footer{
 	color: #05386B;
 	text-decoration: none;
 	line-height: 60px;
-	transition: 0.6s;
 }
 .navbar ul ul li{
 	float: center;
@@ -461,7 +483,16 @@ footer{
 	color: #EDF5E1;
 	background: #05386B;
 	border-radius: 40px;
-	
+}
+.navbar ul .mains ul .not a:hover{
+	color: #EDF5E1;
+	background: #05386B;
+	border-radius: 40px;	
+}
+.navbar ul .mains ul .not:hover{
+	color: #EDF5E1;
+	background: #05386B;
+	border-radius: 40px;	
 }
 .navbar li ul:hover{
 	color: #EDF5E1;
