@@ -421,9 +421,28 @@ footer{
 }
 
 .breeds {
-	font-family: EncodeSans-Bold;
-	font-size: 100px;
-	color: #EDF5E1;
 	text-align: center;
-	margin-top: 75px;
+	margin-top: -20px;
+	margin-bottom: -130px;
+	margin-left: 200px;
+}
+
+/* scrollbar design */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #EDF5E1; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #EDF5E1; 
 }

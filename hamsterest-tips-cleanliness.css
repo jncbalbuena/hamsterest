@@ -414,7 +414,7 @@ footer{
 .navbar{
 	border-radius: 50px;
 	margin-top: 70px;
-	margin-bottom: -30px;
+	margin-bottom: 30px;
 	min-width: 90%;
 	margin-left: 5%;
 	margin-right: 5%;
@@ -430,6 +430,21 @@ footer{
 .navbar ul .mains a {
 	color: #EDF5E1;
 }
+
+.navbar ul .mains ul .not a{
+	float: center;
+	background: #EDF5E1;
+	position: relative;
+	list-style: none;
+	display: inline-block;
+	border-radius: 35px;
+	margin-left: 0px;
+	margin-top: 0px;
+	width: 308px;
+}
+.navbar ul .mains ul .not a{
+	color: #05386B;
+}
 .navbar ul li{
 	float: center;
 	background: #EDF5E1;
@@ -439,14 +454,12 @@ footer{
 	border-radius: 35px;
 	margin-left: 25px;
 }
-
 .navbar ul li a{
 	display:block;
 	padding: 0 25px;
 	color: #05386B;
 	text-decoration: none;
 	line-height: 60px;
-
 }
 .navbar ul ul li{
 	float: center;
@@ -475,7 +488,16 @@ footer{
 	color: #EDF5E1;
 	background: #05386B;
 	border-radius: 40px;
-	
+}
+.navbar ul .mains ul .not a:hover{
+	color: #EDF5E1;
+	background: #05386B;
+	border-radius: 40px;	
+}
+.navbar ul .mains ul .not:hover{
+	color: #EDF5E1;
+	background: #05386B;
+	border-radius: 40px;	
 }
 .navbar li ul:hover{
 	color: #EDF5E1;
@@ -513,7 +535,7 @@ footer{
 }
 .clean-line {
 	padding-left: 250px;
-	padding-top: 140px;
+	padding-top: 80px;
 	position: absolute;
 	z-index: 1000;
 }
@@ -523,6 +545,7 @@ footer{
 	margin-top: 0px;
 	max-width: 1000px;
 	color: #EDF5E1;
+	position: relative;
 }
 .clean-title {
 	font-family: EncodeSans-Bold;
@@ -549,6 +572,8 @@ footer{
 
 .background-image {
 	margin-top: 10px;
+	position: relative;
+	z-index: -1000;
 	width: 100%;
 	height: auto;
 }
@@ -566,7 +591,9 @@ footer{
 	color: #EDF5E1;
 	padding-left: 450px;
 	padding-bottom: 2050px;
-	margin-top: -2290px;
+	margin-top: -2230px;
+	position:relative;
+	z-index: 1000;
 }
 
 .clean2-subtitle {
@@ -577,6 +604,8 @@ footer{
 	padding-bottom: 2050px;
 	margin-top: -2020px;
 	max-width: 1750px;
+	position:relative;
+	z-index: 1000;
 }
 .clean2-subtitle1 {
 	font-size: 25px;
@@ -586,6 +615,8 @@ footer{
 	padding-bottom: 2050px;
 	margin-top: -2020px;
 	max-width: 1750px;
+	position:relative;
+	z-index: 1000;
 }
 .texts1 {
 	padding-left: 450px;
@@ -593,25 +624,35 @@ footer{
 	margin-top: -2000px;
 	max-width: 1000px;
 	color: #EDF5E1;
+	position:relative;
+	z-index: 1000;
 }
 .first-box {
 	margin-top: -20px;
 	padding-top: 0px;
+	position:relative;
+	z-index: 1000;
 }
 .second-box {
 	margin-top: -20px;
 	padding-top: 0px;
 	padding-bottom:500px;
+	position:relative;
+	z-index: 1000;
 }
 .box-content-title{
 	padding-top: 40px;
 	font-size: 30px;
 	font-family: DroidSerif-bold;
+	position:relative;
+	z-index: 1000;
 }
 .box-content-title1{
 	padding-top: 150px;
 	font-size: 30px;
 	font-family: DroidSerif-bold;
+	position:relative;
+	z-index: 1000;
 }
 .right-side {
 	padding-left: 1250px;
@@ -622,18 +663,26 @@ footer{
 	padding-top: 40px;
 	font-size: 20px;
 	font-family: DroidSerif-Regular;
+	position:relative;
+	z-index: 1000;
 }
 .box-content-title2{
 	font-size: 30px;
 	font-family: DroidSerif-bold;
+	position:relative;
+	z-index: 1000;
 }
 .box-content{
 	padding-top: 5px;
 	font-size: 20px;
 	font-family: DroidSerif-Regular;
+	position:relative;
+	z-index: 1000;
 }
 .quote-image {
 	margin-top: 50px;
+	position:relative;
+	z-index: 1000;
 }
 .content-quote-image {
 	margin-left: 50px;
@@ -641,9 +690,13 @@ footer{
 	margin-top: -360px;
 	font-size: 20px;
 	font-family: DroidSerif-Regular;
+	position:relative;
+	z-index: 1000;
 }
 .third-box {
 	margin-top: -20px;
+	position:relative;
+	z-index: 1000;
 }
 .content-quote-image1 {
 	padding-left: 63px;
@@ -652,9 +705,13 @@ footer{
 	padding-right:50px;
 	font-size: 20px;
 	font-family: DroidSerif-Regular;
+	position:relative;
+	z-index: 1000;
 }
 .fourth-box {
 	margin-top: -20px;
+	position:relative;
+	z-index: 1000;
 }
 .content-quote-image2 {
 	padding-left: 60px;
@@ -664,6 +721,8 @@ footer{
 	padding-bottom: 50px;
 	font-size: 20px;
 	font-family: DroidSerif-Regular;
+	position:relative;
+	z-index: 1000;
 }
 .left-numbers {
 	padding-left: 280px;
@@ -672,9 +731,8 @@ footer{
 	color: #5CDB95;
 	font-size: 150px;
 	font-family: SwissEk;
-}
-.numberOne {
-	
+	position:relative;
+	z-index: 1000;
 }
 .numberTwo {
 	padding-top: 20px;
@@ -688,6 +746,8 @@ footer{
 	color: #5CDB95;
 	font-size: 150px;
 	font-family: SwissEk;
+	position:relative;
+	z-index: -400;
 }
 .numberFour {
 	
@@ -697,28 +757,6 @@ footer{
 }
 .numberSix {
 	padding-top: 480px;
-}
-
-.swiper {
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-	justify-content: right;
-	align-items: right;
-	padding-bottom: 50px;
-	padding-left: 320px;
-	margin-top: 10px;
-}
-.swiper-container {
-    width: 95%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-	
-}
-
-.swiper-slide {
-    background-position: center;
-    max-width: 450px;
-    max-height: 600px;
 }
 .details {
 	font-family: GothamHTF-Medium;
@@ -737,9 +775,13 @@ j {
 	margin-left: 75px;
 }
 .ending {
-	padding-top: 450px;
+	padding-top: 350px;
 	padding-bottom: 200px;
 	padding-left:300px;
+}
+.ending-img {
+	position: relative;
+	z-index: 1000;
 }
 .ending-tip {
 	padding-left:700px;
@@ -749,6 +791,8 @@ j {
 	font-style: italic;
 	font-size: 30px;
 	color: #EDF5E1;
+	position: relative;
+	z-index: 1000;
 }
 .line-container2{
 	padding-bottom: 50px;
@@ -762,9 +806,53 @@ j {
 	opacity: 50%;
 }
 .ending-logo {
+	position: relative;
 	padding-top: 20px;
 	width: 60px;
 	height: 80px;
+	z-index: -5000;
+}
+.cage-image {
+	margin-top: -4060px;
+	padding-left: 1000px;
+}
+.cage1 {
+	padding-left: 380px;
+	height: 330px;
+}
+.cage2 {
+	padding-left: 130px;
+	margin-top: -210px;
+	height: 330px;
+}
+.cage3 {
+	padding-left: 320px;
+	margin-top: -190px;
+	height: 400px;
+}
+.qmark {
+	padding-left: 1600px;
+	margin-top: -105px;
+	margin-bottom: 3100px;
+	position: relative;
+	z-index: -500;
+}
+/* scrollbar design */
+
+::-webkit-scrollbar {
+    width: 10px;
 }
 
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
 
+::-webkit-scrollbar-thumb {
+    background: #EDF5E1; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #EDF5E1; 
+}
