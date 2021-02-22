@@ -5,7 +5,10 @@
 <title>Hamsterest</title>
 <script src = "hamsterest-tips.js"></script>
 <link rel = "stylesheet" href = "hamsterest-tips-tbh.css">
+<link rel = "stylesheet" href = "lightbox.min.css">
+<link href="path/to/lightbox.css" rel="stylesheet" />
 <script defer src="https://kit.fontawesome.com/fd13cf3581.js"></script>
+<script src = "lightbox-plus-jquery.min.js"></script>
 </head>
 
 	<body>
@@ -78,20 +81,22 @@
 						<div class = "tips-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et magna nisl, quis consectetur  ante. Aliquam  nec  augue  magna. Quisque  mi massa, lacinia  quis feugiat  id,  posuere  id  erat.  Morbi  a  eros  turpis,  eget  scelerisque  sapien.  Nunc pellentesque,  augue  sed  tristique  gravida,  nisl  augue  dictum  nisi,  at  laoreet  ante turpis  non  dolor.  Maecenas  tristique  tristique  nisl,  tristique  posuere  mi porttitor  eu. Pellentesque interdum, odio id scelerisque sodales, orci augue scelerisque tortor, id ornare  leo  quam  non  eros.  Donec  tincidunt  vulputate  libero  convallis  auctor.  Morbi ullamcorper interdum metus, sed euismod dolor ullamcorper et.</div>
 				</div>
 			</div>
+			
 		</div>
 		
-		<pre>
-		
-		
-		
-		
-	
-		
-		
-		
-		
-		
-		</pre>
+		<div class = "img-body">
+			<div class = "img-container">
+				<div class = "img-holder1">
+					<a href = "img/gallery-tbh/tbh11.jpg" data-lightbox = "mygallery" data-title = "Teddy Bear Hamster"><img src = "img/gallery-tbh/tbh1.jpg"></a>
+				</div>
+				<div class = "img-holder">
+					<a href = "img/gallery-tbh/tbh22.jpg" data-lightbox = "mygallery" data-title = "Teddy Bear Hamster"><img src = "img/gallery-tbh/tbh2.jpg"></a>
+				</div>
+				<div class = "img-holder">
+					<a href = "img/gallery-tbh/tbh33.jpg" data-lightbox = "mygallery" data-title = "Teddy Bear Hamster"><img src = "img/gallery-tbh/tbh3.jpg"></a>
+				</div>
+			</div>
+		</div>
 		<!--<iframe src="Home.html" name="page" class="iframedes"></iframe>
 		-->
 		<!--<div class = "slider">
@@ -161,5 +166,13 @@
 				</div>
 			</footer>
 		</center>
+		<script>
+				lightbox.option({
+				  'resizeDuration': 200,
+				  'wrapAround': true,
+				  'showImageNumberLabel': false
+				})
+			</script>
+		<script src="path/to/lightbox.js"></script>
 	</body>
 </html>

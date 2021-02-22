@@ -5,7 +5,9 @@
 <title>Hamsterest</title>
 <script src = "hamsterest-tips.js"></script>
 <link rel = "stylesheet" href = "hamsterest-tips-winter.css">
+<link rel = "stylesheet" href = "lightbox.min.css">
 <script defer src="https://kit.fontawesome.com/fd13cf3581.js"></script>
+<script src = "lightbox-plus-jquery.min.js"></script>
 </head>
 
 	<body>
@@ -80,18 +82,19 @@
 			</div>
 		</div>
 		
-		<pre>
-		
-		
-		
-		
-	
-		
-		
-		
-		
-		
-		</pre>
+		<div class = "img-body">
+			<div class = "img-container">
+				<div class = "img-holder1">
+					<a href = "img/gallery-winter/winter11.jpg" data-lightbox = "mygallery" data-title = "Winter White Hamster"><img src = "img/gallery-winter/winter1.jpg"></a>
+				</div>
+				<div class = "img-holder">
+					<a href = "img/gallery-winter/winter22.jpg" data-lightbox = "mygallery" data-title = "Winter White Hamster"><img src = "img/gallery-winter/winter2.jpg"></a>
+				</div>
+				<div class = "img-holder">
+					<a href = "img/gallery-winter/winter33.jpg" data-lightbox = "mygallery" data-title = "Winter White Hamster"><img src = "img/gallery-winter/winter3.jpg"></a>
+				</div>
+			</div>
+		</div>
 		<!--<iframe src="Home.html" name="page" class="iframedes"></iframe>
 		-->
 		<!--<div class = "slider">
@@ -161,5 +164,13 @@
 				</div>
 			</footer>
 		</center>
+		<script>
+				lightbox.option({
+				  'resizeDuration': 200,
+				  'wrapAround': true,
+				  'showImageNumberLabel': false
+				})
+			</script>
+		<script src="path/to/lightbox.js"></script>
 	</body>
 </html>

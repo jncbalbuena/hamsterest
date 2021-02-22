@@ -412,7 +412,8 @@ footer{
 	list-style: none;
 	display: inline-block;
 	border-radius: 35px;
-	margin-left: 25px;
+	margin-left: 25px; 
+	transition: 0.4s;
 }
 
 .navbar ul li a{
