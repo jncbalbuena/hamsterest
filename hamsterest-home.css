@@ -125,24 +125,36 @@ a{ /* anchored texts at the nav bar */
 	align-items: center;
 	
 }
-
 .footer-left {
-	margin-bottom: 10px;
-	margin-top: -150px;
-	margin-left: 90px;
 	position: relative;
 	z-index: 1000;
+	padding-left: 70px;
+	margin-top: -140px;
 }
 .socials{
-	padding-top: 10px;
-	padding-bottom: 20px;
+
 }
-.socials a{
+
+.socials a i{
+	color: #EDF5E1;
 	background: #05386B;
 	width: 80px;
 	height: 80px;
 	display: inline-block;
-	padding: 20px 23px;
+	padding: 20px 22px;
+	margin-top: 15px;
+	margin-right: 10px;
+	border-radius: 100px;
+	transition: 0.4s;
+}
+
+.socials a i:hover{ /* to change color when cursor is hovering the anchored texts */   
+	color: #05386B;
+	background: #EDF5E1;
+	width: 80px;
+	height: 80px;
+	display: inline-block;
+	padding: 20px 22px;
 	margin-top: 15px;
 	margin-right: 10px;
 	border-radius: 100px;

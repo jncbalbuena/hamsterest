@@ -13,12 +13,40 @@ font-family: GothamHTF-Light;
 src: url(fonts/GothamHTF-Light.otf);
 }
 @font-face { 
+font-family: GothamHTF-Medium;
+src: url(fonts/GothamHTF-Medium.otf);
+}
+@font-face { 
 font-family: DroidSerif-Regular;
 src: url(fonts/DroidSerif-Regular.ttf);
+}
+@font-face { 
+font-family: DroidSerif-Bold;
+src: url(fonts/DroidSerif-Bold.ttf);
+}
+@font-face { 
+font-family: Moonllime;
+src: url(fonts/Moonllime.ttf);
 }
 @font-face {
 font-family: This is Signature;
 src: url(fonts/This is Signature FREE personal use.ttf);
+}
+@font-face {
+font-family: EncodeSansNarrow-Light;
+src: url(fonts/EncodeSansNarrow-300-Light.ttf);
+}
+@font-face {
+font-family: EncodeSans-Bold;
+src: url(fonts/EncodeSans-Bold.ttf);
+}
+@font-face {
+font-family: EncodeSans-Regular;
+src: url(fonts/EncodeSans-Regular.ttf);
+}
+@font-face {
+font-family: SwissEk;
+src: url(fonts/SWISSEK.ttf);
 }
 body{
 	font-family: GothamHTF-Bold;
@@ -37,7 +65,7 @@ header{
 	display: flex;
 	position: sticky;
 	top: 0;
-	z-index: 10;
+	z-index: 10000;
 	align-content: center;
 	transition:1s;
 }
@@ -150,7 +178,6 @@ nav.sticky .line-container{
 	top: 30%%;
 	bottom: 0%;
 	opacity: 50%;
-	
 }
 
 /* this is the search box */
@@ -410,7 +437,7 @@ footer{
 .navbar{
 	border-radius: 50px;
 	margin-top: 70px;
-	margin-bottom: -30px;
+	margin-bottom: 30px;
 	min-width: 90%;
 	margin-left: 5%;
 	margin-right: 5%;
@@ -426,6 +453,21 @@ footer{
 .navbar ul .mains a {
 	color: #EDF5E1;
 }
+
+.navbar ul .mains ul .not a{
+	float: center;
+	background: #EDF5E1;
+	position: relative;
+	list-style: none;
+	display: inline-block;
+	border-radius: 35px;
+	margin-left: 0px;
+	margin-top: 0px;
+	width: 308px;
+}
+.navbar ul .mains ul .not a{
+	color: #05386B;
+}
 .navbar ul li{
 	float: center;
 	background: #EDF5E1;
@@ -433,10 +475,8 @@ footer{
 	list-style: none;
 	display: inline-block;
 	border-radius: 35px;
-	margin-left: 25px; 
-	transition: 0.4s;
+	margin-left: 25px;
 }
-
 .navbar ul li a{
 	display:block;
 	padding: 0 25px;
@@ -444,7 +484,6 @@ footer{
 	text-decoration: none;
 	line-height: 60px;
 	transition: 0.4s;
-
 }
 .navbar ul ul li{
 	float: center;
@@ -473,7 +512,16 @@ footer{
 	color: #EDF5E1;
 	background: #05386B;
 	border-radius: 40px;
-	
+}
+.navbar ul .mains ul .not a:hover{
+	color: #EDF5E1;
+	background: #05386B;
+	border-radius: 40px;	
+}
+.navbar ul .mains ul .not:hover{
+	color: #EDF5E1;
+	background: #05386B;
+	border-radius: 40px;	
 }
 .navbar li ul:hover{
 	color: #EDF5E1;
@@ -509,40 +557,237 @@ footer{
 		transform: rotateX(0deg);
 	}
 }
-.intro-line {
-	padding-left: 450px;
-	padding-top: 140px;
-	padding-bottom: 100px;
-	display: flex;
+
+.behavior-content1 {
+	padding-left: 250px;
+	padding-top: 250px;
 }
-.texts {
-	padding-left: 650px;
-	padding-bottom: 350px;
-	margin-top: -1185px;
-	max-width: 1300px;
+.behavior-content1-title {
+	margin-top: 50px;
+	margin-left: 850px;
+	margin-bottom: 80px;
 	color: #EDF5E1;
+	font-family: DroidSerif-Bold;
+	font-size: 42px;
+	font-style: italic;
 }
-.intro-title {
-	font-family: "Raleway";
-	font-size: 70px;
+
+.behavior-content1-content{
+	margin-top: 50px;
+	margin-left: 850px;
+	font-family: DroidSerif-Regular;
+	font-size: 28px;
+	font-style: italic;
+	color: #EDF5E1;
+	padding-left: 100px;
+	max-width: 500px;
 }
-.intro-content1 {
-	padding-top: 40px;
-	font-size: 20px;
-	font-family: "DroidSerif-Regular";
+.ending-logo {
+	position: relative;
+	padding-top: 20px;
+	width: 60px;
+	height: 80px;
+	z-index: 5000;
 }
-.intro-ending {
-	padding-top: 90px;
-	font-family: "This is Signature";
-	font-size: 80px;
+.background-image {
+	max-width: 790px;
+	height: 1053.07px;
 }
-.bottom-image {
-	margin-top: -500px;
-	margin-left: 980px;
-	margin-bottom: -4px;
-	width: 47%;
-	height: auto;
+.behavior-content2 {
+	padding-left: 450px;
+	padding-top: 100px;
 }
+.behavior-content2-title {
+	color: #EDF5E1;
+	font-family: EncodeSans-Bold;
+	font-size: 100px;
+}
+.behavior-content2-title1 {
+	margin-top: -30px;
+	margin-bottom: 80px;
+	color: #EDF5E1;
+	font-family: EncodeSans-Regular;
+	font-size: 100px;
+}
+
+.behavior-content2-content{
+	margin-top: 50px;
+	font-family: DroidSerif-Regular;
+	font-size: 25px;
+	color: #EDF5E1;
+	max-width: 670px;
+}
+.behavior-content2-content1{
+	margin-top: -400px;
+	margin-left: 650px;
+	font-family: DroidSerif-Regular;
+	font-size: 25px;
+	color: #EDF5E1;
+	padding-left: 100px;
+	max-width: 670px;
+}
+.qmark {
+	position: absolute;
+	margin-top: 120px;
+	margin-left: -1550px
+}
+.behavior-content3 {
+	padding-top: 300px;
+}
+.behavior-content3-title {
+	margin-top: -2100px;
+	color: #EDF5E1;
+	font-family: EncodeSans-Bold;
+	font-size: 100px;
+	padding-left: 400px;
+}
+.behavior-content3-title1 {
+	margin-top: -30px;
+	color: #EDF5E1;
+	font-family: EncodeSans-Bold;
+	font-size: 100px;
+	padding-left: 400px;
+}
+.behavior-content3-title2 {
+	margin-top: -30px;
+	margin-bottom: 80px;
+	color: #EDF5E1;
+	font-family: EncodeSans-Regular;
+	font-size: 100px;
+	padding-left: 400px;
+}
+.behavior-content3-content{
+	margin-top: 50px;
+	font-family: DroidSerif-Regular;
+	font-size: 25px;
+	color: #EDF5E1;
+	width: 1070px;
+	padding-left: 400px;
+}
+.behavior-content4 {
+	padding-top: 500px;
+	padding-left:600px; 
+}
+.behavior-content4-title {
+	margin-top: -1150px;
+	padding-left: 200px;
+	color: #05386B;
+	font-family: EncodeSans-Bold;
+	font-size: 100px;
+}
+.behavior-content4-title1 {
+	margin-top: -30px;
+	margin-bottom: 80px;
+	padding-left: 200px;
+	color: #05386B;
+	font-family: EncodeSans-Regular;
+	font-size: 100px;
+}
+.behavior-content4-content {
+	font-family: DroidSerif-Regular;
+	font-size: 25px;
+	color: #EDF5E1;
+	padding-bottom: 80px;
+	padding-left: 200px;
+	max-width: 1100px;
+}
+.behavior-content4-content1 {
+	font-family: DroidSerif-Regular;
+	font-size: 25px;
+	color: #EDF5E1;
+	padding-top: 50px;
+	padding-left: 360px;
+	max-width: 1100px;
+}
+.behavior-content4-number1 {
+	font-family: SwissEk;
+	font-size: 100px;
+	color: #05386B;
+	margin-top: -615px;
+	padding-left: 220px;
+}
+.behavior-content4-number2 {
+	font-family: SwissEk;
+	font-size: 100px;
+	color: #05386B;
+	padding-left: 220px;
+	padding-top: 165px;
+}
+.behavior-content4-number3 {
+	font-family: SwissEk;
+	font-size: 100px;
+	color: #05386B;
+	padding-left: 220px;
+	padding-top: 105px;
+}
+.behavior-content5 {
+	padding-top:150px;
+}
+.background-image2 {
+	padding-top: 300px;
+}
+.behavior-content5-title {
+	margin-top: -1200px;
+	padding-left: 1000px;
+	color: #EDF5E1;
+	font-family: EncodeSans-Bold;
+	font-size: 100px;
+}
+.behavior-content5-title1 {
+	margin-top: -30px;
+	padding-left: 1000px;
+	color: #EDF5E1;
+	font-family: EncodeSans-Bold;
+	font-size: 100px;
+}
+.behavior-content5-title2 {
+	margin-top: -30px;
+	padding-left: 1000px;
+	color: #EDF5E1;
+	font-family: EncodeSans-Regular;
+	font-size: 100px;
+	padding-bottom: 100px;
+}
+.behavior-content5-content {
+	font-family: DroidSerif-Regular;
+	font-size: 25px;
+	color: #EDF5E1;
+	padding-bottom: 40px;
+	padding-left: 1000px;
+	max-width: 1600px;
+}
+.behavior-content6 {
+	padding-top: 450px;
+}
+.background-image3 {
+	padding-left: 1050px;
+}
+.behavior-content6-content {
+	font-family: DroidSerif-Regular;
+	font-size: 30px;
+	font-style: italic;
+	text-align: right;
+	max-width: 1400px;
+	padding-right: 480px;
+	padding-left: 550px;
+	color: #EDF5E1;
+	padding-top: 70px;
+	
+}
+.ending-logo1 {
+	padding-bottom: 150px;
+	width: 50px;
+}
+
+
+
+
+
+
+
+
+
+
 
 .line1{
 	max-width: 100%;
@@ -551,23 +796,27 @@ footer{
 	content = "";
 	background: #EDF5E1;
 }
-/* scrollbar design */
-
-::-webkit-scrollbar {
-    width: 10px;
+.line2{
+	margin-left: 850px;
+	margin-top: -1000px;
+	max-width: 470px;
+	height: 2px;
+	position: relative;
+	content = "";
+	background: #EDF5E1;
+	opacity: 50%;
 }
-
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
-    border-radius: 10px;
+.line3{
+	margin-left: 450px;
+	margin-top: -440px;
+	max-width: 470px;
+	height: 2px;
+	position: relative;
+	content = "";
+	background: #EDF5E1;
+	opacity: 50%;
 }
+.line-container2 {
+	margin-top: -100px;
 
-::-webkit-scrollbar-thumb {
-    background: #EDF5E1; 
-    border-radius: 10px;
 }
-
-::-webkit-scrollbar-thumb:hover {
-    background: #EDF5E1; 
-}
-

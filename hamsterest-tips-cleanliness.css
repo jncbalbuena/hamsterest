@@ -332,6 +332,7 @@ nav.sticky .search-box{
 	background: #EDF5E1;
 }
 
+
 footer{
 	padding: 50px;
 	color: #05386B;
@@ -358,7 +359,12 @@ footer{
 	color: #05386B;
 	padding: 0px 10px;
 	font-size: 20px;
+	transition: 0.4s;
 }
+.box a:hover{ /* to change color when cursor is hovering the anchored texts */   
+	color: #EDF5E1;
+}
+/*new version of footer*/
 .footer-bottom{
 	text-align: center;
 	color: #379683;
@@ -368,8 +374,23 @@ footer{
 	padding-top: 70px;
 	padding-bottom: 20px;
 }
-.socials a{
+
+.socials a i{
+	color: #EDF5E1;
 	background: #05386B;
+	width: 80px;
+	height: 80px;
+	display: inline-block;
+	padding: 20px 20px;
+	margin-top: 15px;
+	margin-right: 10px;
+	border-radius: 100px;
+	transition: 0.4s;
+}
+
+.socials a i:hover{ /* to change color when cursor is hovering the anchored texts */   
+	color: #05386B;
+	background: #EDF5E1;
 	width: 80px;
 	height: 80px;
 	display: inline-block;
@@ -383,6 +404,7 @@ footer{
 	font-size: 40px;
 	align-content: center;
 }
+
 @media (max-width: 1250px){
 	.menu{
 		display: none;
@@ -460,6 +482,7 @@ footer{
 	color: #05386B;
 	text-decoration: none;
 	line-height: 60px;
+	transition: 0.4s;
 }
 .navbar ul ul li{
 	float: center;

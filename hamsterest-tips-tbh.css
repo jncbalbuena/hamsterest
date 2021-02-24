@@ -344,6 +344,7 @@ footer{
 	padding: 0px 10px;
 	font-size: 20px;
 }
+/*new version of footer*/
 .footer-bottom{
 	text-align: center;
 	color: #379683;
@@ -353,8 +354,23 @@ footer{
 	padding-top: 70px;
 	padding-bottom: 20px;
 }
-.socials a{
+
+.socials a i{
+	color: #EDF5E1;
 	background: #05386B;
+	width: 80px;
+	height: 80px;
+	display: inline-block;
+	padding: 20px 20px;
+	margin-top: 15px;
+	margin-right: 10px;
+	border-radius: 100px;
+	transition: 0.4s;
+}
+
+.socials a i:hover{ /* to change color when cursor is hovering the anchored texts */   
+	color: #05386B;
+	background: #EDF5E1;
 	width: 80px;
 	height: 80px;
 	display: inline-block;
@@ -461,6 +477,7 @@ footer{
 	color: #05386B;
 	text-decoration: none;
 	line-height: 60px;
+	transition: 0.4s;
 }
 .navbar ul ul li{
 	float: center;
