@@ -426,7 +426,7 @@ footer{
 .swiper-container {
     width: 100%;
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 300px;
 }
 
 .swiper-slide {
@@ -444,8 +444,8 @@ footer{
 
 .breeds {
 	text-align: center;
-	margin-top: -20px;
-	margin-bottom: -130px;
+	margin-top: 100px;
+	margin-bottom: -70px;
 	margin-left: 200px;
 }
 

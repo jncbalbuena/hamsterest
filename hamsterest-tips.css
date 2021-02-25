@@ -519,22 +519,24 @@ footer{
 	padding-left: 650px;
 	padding-bottom: 350px;
 	margin-top: -1185px;
-	max-width: 1300px;
 	color: #EDF5E1;
 }
 .intro-title {
 	font-family: "Raleway";
-	font-size: 70px;
+	font-size: 100px;
+	max-width: 1900px;
 }
 .intro-content1 {
 	padding-top: 40px;
 	font-size: 20px;
 	font-family: "DroidSerif-Regular";
+	max-width: 700px;
 }
 .intro-ending {
 	padding-top: 90px;
 	font-family: "This is Signature";
 	font-size: 80px;
+	max-width: 700px;
 }
 .bottom-image {
 	margin-top: -500px;
