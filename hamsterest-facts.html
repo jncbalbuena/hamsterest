@@ -50,31 +50,31 @@
 		<div class = "swiper">
 			<div class="swiper-container">
 				<div class="swiper-wrapper">
-					<a href = "hamsterest-home.html" class="swiper-slide">
+					<a href = "#robo" class="swiper-slide">
 						<img src = "img/roborovski_facts.png"></img>
 						<div class = "details">
 							Roborovski
 						</div>
 					</a>
-					<a href = "hamsterest-home.html" class="swiper-slide">
+					<a href = "#winter" class="swiper-slide">
 						<img src = "img/winter_facts.png"></img>
 						<div class = "details">
 							Winter White
 						</div>
 					</a>
-					<a href = "hamsterest-home.html" class="swiper-slide">
+					<a href = "#gold" class="swiper-slide">
 						<img src = "img/golden_facts.png"></img>
 						<div class = "details">
 							Golden
 						</div>
 					</a>
-					<a href = "hamsterest-home.html" class="swiper-slide">
+					<a href = "#tbh" class="swiper-slide">
 						<img src = "img/tbh_facts.png"></img>
 						<div class = "details">
 							Teddy Bear
 						</div>
 					</a>
-					<a href = "hamsterest-home.html" class="swiper-slide">
+					<a href = "#cdh" class="swiper-slide">
 						<img src = "img/cdh_facts.png"></img>
 						<div class = "details">
 							Campbell's
@@ -82,7 +82,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="parallax-window" data-parallax="scroll" data-z-index="1" data-image-src="img/facts_roborovski.png">
+			<div id = "robo" class="parallax-window" data-parallax="scroll" data-z-index="1" data-image-src="img/facts_roborovski.png">
 				<div class = "breed-name">Roborovski</div>
 			</div>
 			<div class = "content-info">
@@ -106,7 +106,7 @@
 				<img class = "end-line" src = "img/facts_line.png">
 			</div>
 			
-			<div class="parallax-window" data-parallax="scroll" data-z-index="1" data-image-src="img/facts_winter_white.png">
+			<div id = "winter" class="parallax-window" data-parallax="scroll" data-z-index="1" data-image-src="img/facts_winter_white.png">
 				<div class = "breed-name">Winter White</div>
 			</div>
 			<div class = "content-info">
@@ -160,7 +160,7 @@
 			</div>
 			
 			
-			<div class="parallax-window" data-parallax="scroll" data-z-index="1" data-image-src="img/facts_golden.png">
+			<div id = "gold" class="parallax-window" data-parallax="scroll" data-z-index="1" data-image-src="img/facts_golden.png">
 				<div class = "breed-name">Golden</div>
 			</div>
 			<div class = "content-info">
@@ -198,7 +198,7 @@
 				<img class = "end-line" src = "img/facts_line.png">
 			</div>
 			
-			<div class="parallax-window" data-parallax="scroll" data-z-index="1" data-image-src="img/facts_teddy_bear.png">
+			<div id = "tbh" class="parallax-window" data-parallax="scroll" data-z-index="1" data-image-src="img/facts_teddy_bear.png">
 				<div class = "breed-name">Teddy Bear</div>
 			</div>
 			<div class = "content-info">
@@ -222,7 +222,7 @@
 				<img class = "end-line" src = "img/facts_line.png">
 			</div>
 			
-			<div class="parallax-window" data-parallax="scroll" data-z-index="1" data-image-src="img/facts_campbell.png">
+			<div id = "cdh" class="parallax-window" data-parallax="scroll" data-z-index="1" data-image-src="img/facts_campbell.png">
 				<div class = "breed-name-green">Campbell</div>
 			</div>
 			<div class = "content-info">
@@ -285,6 +285,16 @@
 				delay: 2500,
 				disableOnInteraction: false,
 			  },
+			});
+		</script>
+		<script src = "https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script type = "text/javascript">
+			$(function() {
+				$(".swiper-wrapper a").on('click', function(){
+					$("html, body").animate({
+						scrollTop: $($.attr(this, 'href')).offset().top
+					}, 2000);
+				});
 			});
 		</script>
 		</div>
