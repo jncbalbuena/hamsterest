@@ -13,12 +13,44 @@ font-family: GothamHTF-Light;
 src: url(fonts/GothamHTF-Light.otf);
 }
 @font-face { 
+font-family: GothamHTF-Medium;
+src: url(fonts/GothamHTF-Medium.otf);
+}
+@font-face { 
+font-family: DroidSerif-Regular;
+src: url(fonts/DroidSerif-Regular.ttf);
+}
+@font-face { 
+font-family: DroidSerif-Bold;
+src: url(fonts/DroidSerif-Bold.ttf);
+}
+@font-face { 
 font-family: Moonllime;
 src: url(fonts/Moonllime.ttf);
 }
-@font-face { 
+@font-face {
+font-family: This is Signature;
+src: url(fonts/This is Signature FREE personal use.ttf);
+}
+@font-face {
+font-family: EncodeSansNarrow-Light;
+src: url(fonts/EncodeSansNarrow-300-Light.ttf);
+}
+@font-face {
 font-family: EncodeSans-Bold;
 src: url(fonts/EncodeSans-Bold.ttf);
+}
+@font-face {
+font-family: EncodeSans-Regular;
+src: url(fonts/EncodeSans-Regular.ttf);
+}
+@font-face {
+font-family: SwissEk;
+src: url(fonts/SWISSEK.ttf);
+}
+@font-face {
+font-family: Tuesday Vibes;
+src: url(fonts/TUESDAY-VIBES.ttf);
 }
 body{
 	font-family: GothamHTF-Bold;
@@ -37,7 +69,7 @@ header{
 	display: flex;
 	position: sticky;
 	top: 0;
-	z-index: 10;
+	z-index: 1000;
 	align-content: center;
 	transition:1s;
 }
@@ -426,7 +458,7 @@ footer{
 .swiper-container {
     width: 100%;
     padding-top: 50px;
-    padding-bottom: 300px;
+    padding-bottom:400px;
 }
 
 .swiper-slide {
@@ -449,6 +481,111 @@ footer{
 	margin-left: 200px;
 }
 
+.parallax-window {
+    min-height: 900px;
+    background: transparent;
+	margin-bottom: 160px;
+}
+.breed-name {
+	font-family: Tuesday Vibes;
+	font-size: 290px;
+	text-align: center;
+	position: relative;
+	z-index: 10;
+	padding-top: 250px;
+	color: #EDF5E1;
+	text-shadow: 6px 6px 30px #693f01;
+}
+.breed-name-green {
+	font-family: Tuesday Vibes;
+	font-size: 290px;
+	text-align: center;
+	position: relative;
+	z-index: 10;
+	padding-top: 250px;
+	color: #EDF5E1;
+	text-shadow: 6px 6px 30px #156B00;
+}
+
+.content-info {
+	padding-left: 470px;
+}
+.four-squares {
+	padding-left: 100px;
+}
+.robo-title {
+	margin-top: -157px;
+	padding-left: 280px;
+	font-family: EncodeSans-Bold;
+	color: #05386B;
+	font-size: 80px;
+}
+.robo-subtitle {
+	margin-top: -30px;
+	padding-left: 280px;
+	font-family: EncodeSans-Regular;
+	color: #05386B;
+	font-size: 80px;
+}
+.info {
+	padding-top: 80px;
+	text-align: right;
+	font-family: DroidSerif-Regular;
+	font-size: 25px;
+	color: #05386B;
+	max-width: 250px;
+}
+.line2{
+	margin-top: -115px;
+	height: 2px;
+	position: relative;
+	content = "";
+	background: #EDF5E1;
+	max-width: 290px;
+	margin-left: 120px;
+	transform: rotate(90deg);
+}
+.desc {
+	margin-top: -122px;
+	font-family: DroidSerif-Regular;
+	font-size: 25px;
+	color: #EDF5E1;
+	max-width: 1000px;
+	padding-left: 278px;
+	padding-bottom: 70px;
+}
+.content-title {
+	text-transform: uppercase;
+	font-family: DroidSerif-Regular;
+	font-size: 40px;
+	color: #EDF5E1;
+	max-width: 1000px;
+	padding-left: 238px;
+}
+.content {
+	font-family: DroidSerif-Regular;
+	font-size: 25px;
+	color: #EDF5E1;
+	max-width: 1120px;
+	padding-left: 278px;
+	padding-bottom:30px;
+}
+.end-line {
+	padding-top:100px;
+	padding-bottom: 100px;
+}
+.last-end-line {
+	padding-top:100px;
+	padding-bottom: 400px;
+}
+
+.ending-logo {
+	position: relative;
+	padding-top: 20px;
+	width: 30px;
+	height: 50px;
+	z-index: 100;
+}
 /* scrollbar design */
 
 ::-webkit-scrollbar {
